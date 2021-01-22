@@ -16,7 +16,7 @@ import com.example.c196adamson.Entity.Course;
 import com.example.c196adamson.Entity.CourseMentor;
 import com.example.c196adamson.Entity.Term;
 
-@Database(entities = {Term.class, Course.class, CourseMentor.class, Assessment.class}, exportSchema = false, version = 4)
+@Database(entities = {Term.class, Course.class, CourseMentor.class, Assessment.class}, exportSchema = false, version = 5)
 @TypeConverters({Converters.class})
 public abstract class RoomDB extends RoomDatabase {
 

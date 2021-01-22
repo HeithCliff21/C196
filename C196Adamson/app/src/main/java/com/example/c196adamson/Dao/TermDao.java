@@ -24,15 +24,9 @@ public interface TermDao {
     @Insert
     void insertTerm(Term term);
 
-    @Insert
-    void insertAll(Term... term);
-
     @Update
     void updateTerm(Term term);
 
     @Delete
     void deleteTerm(Term term);
-
-    @Query("DELETE FROM term_table")
-    public void nukeTermTable();
 }

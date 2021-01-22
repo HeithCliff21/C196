@@ -1,6 +1,5 @@
 package com.example.c196adamson;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -13,7 +12,6 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.text.format.DateFormat;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -36,7 +34,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import java.util.Objects;
 
 public class EditCourseActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
     private static final int PERMISSIONS_REQUEST_SMS = 0;
@@ -89,7 +86,6 @@ public class EditCourseActivity extends AppCompatActivity implements DatePickerD
         updateCourseButton = findViewById(R.id.updateCourseButton);
         ecSendbutton = findViewById(R.id.ecSendbutton);
         ecSendNumber = findViewById(R.id.ecSendNumber);
-
 
         setupDatePicker();
 
@@ -288,7 +284,6 @@ public class EditCourseActivity extends AppCompatActivity implements DatePickerD
         calendar.set(Calendar.YEAR, year);
         calendar.set(Calendar.MONTH, month = month +1);
         calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-        // String currentDateString = month + "/" + dayOfMonth + "/" + year;
         String currentDateString = month + "/" + dayOfMonth + "/" + year;
         datePickerView.setText(currentDateString);
     }

@@ -20,7 +20,6 @@ import android.widget.Toast;
 import com.example.c196adamson.Database.Converters;
 import com.example.c196adamson.Database.RoomDB;
 import com.example.c196adamson.Entity.Assessment;
-import com.example.c196adamson.Entity.Course;
 import com.example.c196adamson.Utilities.DatePickerFragment;
 import com.example.c196adamson.Utilities.Notifications;
 
@@ -189,7 +188,6 @@ public class AddAssessmentActivity extends AppCompatActivity implements DatePick
         calendar.set(Calendar.YEAR, year);
         calendar.set(Calendar.MONTH, month = month +1);
         calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-        // String currentDateString = month + "/" + dayOfMonth + "/" + year;
         String currentDateString = month + "/" + dayOfMonth + "/" + year;
         datePickerView.setText(currentDateString);
     }

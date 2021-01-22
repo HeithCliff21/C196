@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WGU C196 Adamson</string>
+    <string name="app_name">WGU C196 Heith Adamson</string>
     <string-array name="term_array">
         <item>In Progress</item>
         <item>Completed</item>
@@ -19,6 +19,5 @@
         <item>Performance</item>
         <item>Objective</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -16,9 +16,6 @@ import com.example.c196adamson.Entity.Course;
 import com.example.c196adamson.Entity.Term;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 public class TermDetailsActivity extends AppCompatActivity {

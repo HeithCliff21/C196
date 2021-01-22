@@ -7,7 +7,6 @@ import androidx.room.Query;
 import androidx.room.Update;
 
 import com.example.c196adamson.Entity.Assessment;
-import com.example.c196adamson.Entity.Course;
 
 import java.util.List;
 
@@ -27,9 +26,6 @@ public interface AssessmentDao {
 
     @Insert
     void insertAssessment(Assessment assessment);
-
-    @Insert
-    void insertAll(Assessment... assessment);
 
     @Update
     void updateAssessment(Assessment assessment);

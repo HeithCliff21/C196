@@ -177,9 +177,6 @@ public class EditAssessmentActivity extends AppCompatActivity implements DatePic
         duDate = formatter.parse(dDate);
         cuDate = formatter.parse(cDate);
 
-
-
-
         if (name.trim().isEmpty()){
             Toast.makeText(this, "A assessment name is required", Toast.LENGTH_SHORT).show();
             return;
@@ -247,7 +244,6 @@ public class EditAssessmentActivity extends AppCompatActivity implements DatePic
         calendar.set(Calendar.YEAR, year);
         calendar.set(Calendar.MONTH, month = month +1);
         calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-        // String currentDateString = month + "/" + dayOfMonth + "/" + year;
         String currentDateString = month + "/" + dayOfMonth + "/" + year;
         datePickerView.setText(currentDateString);
     }

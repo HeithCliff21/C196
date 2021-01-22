@@ -27,15 +27,9 @@ public interface CourseDao {
     @Insert
     void insertCourse(Course course);
 
-    @Insert
-    void insertAll(Course... courses);
-
     @Update
     void updateCourse(Course course);
 
     @Delete
     void deleteCourse(Course course);
-
-    @Query("DELETE FROM course_table")
-    public void nukeCourseTable();
 }

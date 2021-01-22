@@ -27,12 +27,9 @@ public class Notifications extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-
-//        int ID = intent.getIntExtra("ID" ,0);
         String alertTitle = intent.getStringExtra("title");
         String alertText = intent.getStringExtra("text");
         int nextAlertID = intent.getIntExtra("nextAlertID", getAndIncrementNextAlertID(context));
-
 
         //Notification Channel
         createNotificationChannel(context, Channel_ID);

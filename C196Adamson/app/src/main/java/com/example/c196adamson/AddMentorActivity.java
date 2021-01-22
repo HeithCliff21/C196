@@ -12,9 +12,6 @@ import android.widget.Toast;
 import com.example.c196adamson.Database.RoomDB;
 import com.example.c196adamson.Entity.CourseMentor;
 
-import java.text.ParseException;
-
-
 public class AddMentorActivity extends AppCompatActivity {
     RoomDB DB;
     int termID;

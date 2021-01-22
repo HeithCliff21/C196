@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -22,8 +21,6 @@ public class TermListActivity extends AppCompatActivity {
     FloatingActionButton addTermButton;
     List<Term> allTerms;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +28,6 @@ public class TermListActivity extends AppCompatActivity {
         termList = findViewById(R.id.tdTermList);
         DB = RoomDB.getInstance(getApplicationContext());
         addTermButton = findViewById(R.id.addTermButton);
-
 
         termList.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent = new Intent(getApplicationContext(), TermDetailsActivity.class);

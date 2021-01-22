@@ -2,11 +2,6 @@ package com.example.c196adamson;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
-import android.app.Activity;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -14,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.example.c196adamson.Database.RoomDB;
 import com.example.c196adamson.Entity.Assessment;
@@ -48,7 +42,6 @@ public class HomePageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         DB = RoomDB.getInstance(getApplicationContext());
-        // TextView Data
         termData = findViewById(R.id.termData);
         termCompleteData = findViewById(R.id.termCompleteData);
         termProgressData = findViewById(R.id.termProgressData);
@@ -61,11 +54,11 @@ public class HomePageActivity extends AppCompatActivity {
         assessmentPassedData = findViewById(R.id.assessmentPassedData);
         assessmentProgressData = findViewById(R.id.assessmentProgressData);
         assessmentBarData = findViewById(R.id.assessmentBarData);
-        // Progress Bar
         termProgressBar = findViewById(R.id.termProgressBar);
         courseProgressBar = findViewById(R.id.courseProgressBar);
         assessmentProgressBar = findViewById(R.id.assessmentProgressBar);
         hTermListbutton = findViewById(R.id.hTermListbutton);
+
         updateViews();
         hTermListbutton.setOnClickListener(new View.OnClickListener() {
             @Override

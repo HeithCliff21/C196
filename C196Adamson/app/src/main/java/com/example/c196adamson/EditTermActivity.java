@@ -205,7 +205,6 @@ public class EditTermActivity extends AppCompatActivity implements DatePickerDia
         calendar.set(Calendar.YEAR, year);
         calendar.set(Calendar.MONTH, month = month +1);
         calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-        // String currentDateString = month + "/" + dayOfMonth + "/" + year;
         String currentDateString = month + "/" + dayOfMonth + "/" + year;
         datePickerView.setText(currentDateString);
     }
