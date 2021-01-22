@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.c196adamson">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_foreground1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.C196Adamson">
+        <receiver
+            android:name=".Utilities.Notifications"
+            android:enabled="true"
+            android:exported="true" />
+        <activity
+            android:name=".EditMentorActivity"
+            android:label="Edit Mentor"
+            android:parentActivityName=".MentorDetailsActivity" />
+        <activity
+            android:name=".EditAssessmentActivity"
+            android:label="Edit Assessment"
+            android:parentActivityName=".AssessmentDetailsActivity" />
+        <activity
+            android:name=".EditCourseActivity"
+            android:label="Edit Course"
+            android:parentActivityName=".CourseDetailsActivity" />
+        <activity
+            android:name=".EditTermActivity"
+            android:label="Edit Term"
+            android:parentActivityName=".TermDetailsActivity" />
+        <activity
+            android:name=".MentorDetailsActivity"
+            android:label="Mentor Details"
+            android:parentActivityName=".CourseDetailsActivity" />
+        <activity
+            android:name=".AssessmentDetailsActivity"
+            android:label="Assessment Details"
+            android:parentActivityName=".CourseDetailsActivity" />
+        <activity
+            android:name=".AddMentorActivity"
+            android:label="Add Mentor"
+            android:parentActivityName=".CourseDetailsActivity" />
+        <activity
+            android:name=".AddAssessmentActivity"
+            android:label="Add Assessment"
+            android:parentActivityName=".CourseDetailsActivity" />
+        <activity
+            android:name=".CourseDetailsActivity"
+            android:label="Course Details"
+            android:parentActivityName=".TermDetailsActivity" />
+        <activity
+            android:name=".AddCourseActivity"
+            android:label="Add Course"
+            android:parentActivityName=".TermDetailsActivity"/>
+        <activity
+            android:name=".TermDetailsActivity"
+            android:label="Term Details"
+            android:parentActivityName=".TermListActivity" />
+        <activity
+            android:name=".AddTermActivity"
+            android:label="Add Term"
+            android:parentActivityName=".TermListActivity" />
+        <activity
+            android:name=".TermListActivity"
+            android:label="Term List"
+            android:parentActivityName=".HomePageActivity" />
+        <activity android:name=".HomePageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
